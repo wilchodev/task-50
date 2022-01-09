@@ -13,10 +13,10 @@
     <div class="main">
      <form method="POST">
        <input type="text" name="name" minlength="20" class="input" required>
-       <input type="text" name="name_slug" class="input" required>
+       <input type="text" name="name_slug" pattern="^([a-z][a-z0-9]*)(-[a-z0-9]+)*$" class="input" required>
        <textarea name="description"></textarea>
-       <input type="number" name="contributors" min="1" max="100" class="input" required>
-       <input type="number" name="max_branchers" min="1" max="100" class="input" required>
+       <input type="number" name="contributers" min="1" max="100" class="input" required>
+       <input type="number" name="max_branches" min="1" max="100" class="input" required>
      </form>>
     </div>
   </body>
